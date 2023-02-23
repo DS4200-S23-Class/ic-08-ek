@@ -16,7 +16,7 @@ var svg = d3.select("#bar-chart")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // read the data from CSV file
-d3.csv("bar-data.csv", function(error, data) {
+d3.csv("data.csv", function(error, data) {
   if (error) throw error;
 
   // format the data
@@ -62,9 +62,4 @@ d3.csv("bar-data.csv", function(error, data) {
                 });
 });
 
-// create the tooltip
-var tooltip = d3.select("#bar-chart")
-                .append("div")
-                .attr("id", "tooltip")
-                .attr("class", "hidden")
-                .html("");
+
