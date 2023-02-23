@@ -3,11 +3,38 @@
 
 <head>
     <meta charset=utf-8/>
+    <title>ic-08</title>
+
 </head>
 
+        <h1 class="centered-header">D3 Part 2</h1>
+      <div class="chart">
+        <form id="new-point-form">
+          <label for="x-coordinate">X-coordinate:</label>
+          <input type="number" name="x-coordinate" id="x-coordinate" min="1" max="9" required>
+          <br>
+          <label for="y-coordinate">Y-coordinate:</label>
+          <input type="number" name="y-coordinate" id="y-coordinate" min="1" max="9" required>
+          <br>
+          <button type="submit">Add Point</button>
+        </form>
+        <div id="selected-point"></div>
+      </div>
 
 <body>
 
+    <h2>Acknowledgements</h2>
+    <ul>
+      <li>
+        <a href="https://www.fluidencodings.com/teaching-materials/cc-for-the-web/v1/page.php?pid=svg">Intro to D3 - Creative Coding for the Web</a>
+      </li>
+      <li>
+        <a href="https://www.d3-graph-gallery.com/intro_d3js.html ">Intro to D3 in 10 basic examples</a>
+      </li>
+    </ul>
+
+        <script src="js/d3.v6.1.1/d3.min.js"></script>
+        <script src="ic-08.js"></script>
 
 </body>
 
